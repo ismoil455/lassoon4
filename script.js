@@ -1,50 +1,33 @@
-// 1)// const button = document.querySelector('button')
-// button.addEventListener('mouseover', ()=>{
-//     console.log('san mani bosding')
-// })
-//  dblclick,click 
 
-// const items = document.querySelectorAll('#button')
-// items.forEach((item) =>{
-//     item.addEventListener('click', ()=>{
-
-//     console.log ('item clicked')
-// })
-// })
-
-// const items = document.querySelectorAll('li')
-// items.forEach((item) =>{
-//     item.addEventListener('click', (e)=>{
-
-//     console.log ('e.target')
-// })
-// })
+const taskInput = document.getElementById('taskInput');
+const addTaskButton = document.getElementById('addTaskButton');
+const tasks = document.getElementById('tasks');
+const imgg = document.getElementById('imgg');
+const body = document.body;
 
 
-//  const items = document.querySelectorAll('li')
-//  items.forEach((item) =>{
-//      item.addEventListener('click', (e)=>{
-//         e.target.style.backgroundColor = 'green';
-//         e.target.style.color = 'white';
-     
-//  })
-//  })
+addTaskButton.addEventListener('click', () => {
+    const taskText = taskInput.value.trim();
+    if (taskText === '') return;
 
-const decreaseButton = document.getElementById('decrease');
-const increaseButton = document.getElementById('increase');
+    const taskDiv = document.createElement('div');
+    taskDiv.textContent = taskText;
 
-decreaseButton.addEventListener('click', () => {
-  let currentValue = parseInt(document.getElementById('nul').textContent);
-  document.getElementById('nul').textContent = currentValue - 1;
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'NOTE#1';
+
+
+    deleteButton.addEventListener('click', () => {
+        taskDiv.remove();
+    });
+
+    taskDiv.appendChild(deleteButton);
+    tasks.appendChild(taskDiv);
+    taskInput.value = '';
 });
 
-increaseButton.addEventListener('click', () => {
-  let currentValue = parseInt(document.getElementById('nul').textContent);
-  document.getElementById('nul').textContent = currentValue + 1;
+
+imgg.addEventListener('click', () => {
+    body.classList.toggle('dark-theme');
+    imgg.innerHTML = body.classList.contains('dark-theme') ? '☀' : '🌙';
 });
-
-  
-
- 
-
-

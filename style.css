@@ -1,87 +1,64 @@
-
-
-body {
-    background-color: black;
-    color: white; 
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-  }
-  
-  .container {
+.container{
     margin: 0 auto;
+    max-width: 784px;
     width: 100%;
-    max-width: 1400px;
-    text-align: center; 
-  }
-  
-  .inp {
-    width: 331px;
-    height: 51px;
-    padding-left: 30px;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24.2px;
-    letter-spacing: 0;
-    margin-top: 60px;
-    border-radius: 30px;
-    border: 3px solid #2A2A2A;
-    color: #2A2A2A;
-  }
-  
-  .btn {
-    background-color: #2A2A2A;
-    width: 112px;
-    height: 51px;
-    border: none;
-    border-radius: 30px;
-    color: white; 
-    margin-top: 20px; 
-  }
-  
-  .counter {
+    padding-top: 20px;
+
+}
+
+input{
+ 
+    width: 595px;
+    height: 38[x];
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    gap: 436px;
+    border-radius: 5px;
+    border-width: 1px;
+    
+border: 2px solid #C3C1E5;
+
+}
+#addTaskButton{
+    width: 64px;
+height: 38px;
+
+border-radius: 5px;
+padding: 10px;
+background-color: #6C63FF;
+border: none;
+color: white;
+
+}
+
+.dark-theme {
+background-color: #1e1e1e;
+color: white;
+}
+
+.theme-button{
+    width: 38px;
+height: 38px;
+left: 691px;
+border-radius: 5px;
+color: white;
+background-color: #6C63FF;
+
+}
+h2{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-   
-    margin-top: 20px;
-    background-color: #2A2A2A;
-    width: 478px;
-    height: 134px;
-    
-   gap: 50px;
-     border-radius: 32px;
+    width: 122px;
+height: 39px ;
+font-family: 'Kanit';
+font-weight: 500;
+font-size: 22px;
+margin: auto;
 
-  }
-  
-  button {
-    background-color: #2A2A2A;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    font-size: 20px;
-    
-    border: none;
- 
-  }
-  
-  #nul {
-    font-size: 80px;
-    color: red;
-  }
-  #increase, #decrease{
-
-    width: 80px;
-    height: 80px; 
-    font-size: 80px; 
-
- 
-  }
+}
+.photo{
+position: relative;
+right: 40px;
+bottom: -5px;
+}
